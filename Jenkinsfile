@@ -24,13 +24,13 @@ pipeline {
 
 	post{
 		success{
-				echo "Build"
+				echo "success"
 				}
 		always{
-				echo "Test"
+				echo "always"
 			}
 		failure{
-				echo "Integration Test"
+				echo "failure"
 			}
 			
 	}
