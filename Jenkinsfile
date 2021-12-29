@@ -1,9 +1,10 @@
 pipeline {
 	agent {
-        docker  {
+		docker  {
             image 'maven:3.6.3'
         }
     }
+	
 	stages{
 		stage('Build') {
 			steps {
@@ -17,13 +18,13 @@ pipeline {
 				echo "Test"
 			}
 				
-			}
+		}
 		stage('Integration Test') {
 			steps {
 				echo "Integration Test"
 			}
 				
-			}
+		}
 			
 	}
 
